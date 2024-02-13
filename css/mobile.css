@@ -38,7 +38,7 @@
 /* Change text color on hover */
 #navLinksContainer li:hover {
   background-color: #0B60B0; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
+  color: black; /* Change text color on hover */
 }
 
 @media only screen and (max-width: 930px) {
