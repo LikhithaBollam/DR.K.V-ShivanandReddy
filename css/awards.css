@@ -1,0 +1,40 @@
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Slider content */
+.slides {
+    display: flex;
+    justify-content: center; /* Center align the slides */
+    transition: transform 0.5s ease;
+}
+
+/* Individual slide */
+.slide {
+    min-width: 100%;
+}
+
+/* Image inside slide */
+.slide img {
+    display: block;
+    margin: 0 auto; /* Center align the image */
+}
+
+.hidden {
+    display: none;
+}
+
+#map {
+    height: 400px; /* Adjust this value as needed */
+    width: 100%;
+}
+
+/* Hide all slides by default */
+
+/* Common styles */
+
+
+

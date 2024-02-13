@@ -1,0 +1,35 @@
+.home-article {
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.navigation-icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+
+#currentImage {
+    height: 500px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* To ensure margin:auto works */
+}
+
+.fa {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.fa:hover {
+    color: #555;
+}

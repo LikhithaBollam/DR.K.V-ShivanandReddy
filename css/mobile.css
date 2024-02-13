@@ -1,0 +1,159 @@
+
+
+
+
+@media only screen and (max-width: 1206px) {
+  .background {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .content-right {
+      order: -1; /* Move content-right to the top */
+  }
+
+  .content-left {
+      margin-top: 20px; /* Add some space between content-right and content-left */
+  }
+
+
+
+.nav-left #textPadIcon {
+  display: inline-block;
+}
+
+.show{
+  background-color: #B4D4FF;
+}
+
+#navLinksContainer li {
+  background-color:#EEF5FF;
+  margin-bottom: 3px;
+  border-radius: 5px;
+ 
+ /* Add some space between list items */
+  /* Add padding to make it visually appealing */
+}
+
+/* Change text color on hover */
+#navLinksContainer li:hover {
+  background-color: #0B60B0; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+@media only screen and (max-width: 930px) {
+  .slide img {
+      max-width: 100%; /* Set the maximum width of the images to 100% */
+      height: auto; /* Allow the height to adjust proportionally */
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  img {
+      max-width: 100%; /* Set the maximum width of the images to 100% */
+      height: auto; /* Allow the height to adjust proportionally */
+      display: block; /* Ensure images are displayed as blocks to center them */
+      margin: 5px auto; /* Center align the images */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Rest of the styles remain the same */
+#navLinksContainer {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position it just below the textPadIcon */
+  left: 0; /* Align it with the left edge of the textPadIcon */
+  background-color: #fff; /* Background color to make it visible */
+/* Add some padding for better appearance */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.nav-left {
+  position: relative; /* Position nav-left relatively */
+}
+
+/* CSS code to show the navigation links when the 'show' class is added */
+#navLinksContainer.show {
+  display: block;
+  background-color: #B4D4FF;
+  border-radius: 5px;
+}
+
+}
+
+
+@media only screen and (max-width: 976px) {
+  .home-article-img {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px; /* Add some space between the home-article-img elements */
+  }
+
+  #matter textarea {
+    width: 80%;
+}
+
+/* Move the social icons down */
+
+}
+
+
+
+@media screen and (max-width: 657px) {
+  /* Adjust the width of the textarea */
+  #matter textarea {
+      width: 80%;
+  }
+ #map1,#map2{
+  width:300px; height:150px
+ }
+
+
+
+}
+@media screen and (max-width: 669px) {
+  #last {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  #ic1 {
+      margin-bottom: 10px;
+  }
+}
+
+/* Other mobile styles */
+
+@media (max-width: 931px) {
+  #edu1 {
+      background-color: transparent !important;
+      margin: 0 auto; /* Center the container */
+      border-radius: 0; /* Remove border-radius if needed */
+      padding: 0; /* Remove padding if needed */
+  }
+
+  
+
+  #edu1 img {
+      display: block; /* Center the image */
+      margin: 0 auto;
+      max-width: 100%; /* Make sure the image is responsive */
+      height: auto;
+  }
+
+ 
+
+}
+
+/* Other mobile styles */
+
+
+

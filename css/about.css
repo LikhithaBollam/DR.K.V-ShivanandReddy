@@ -1,0 +1,43 @@
+li{
+    font-family: var(--font3);
+}
+
+.post-img1 img {
+    width: -webkit-fill-available;
+    height: auto;
+    margin: 0px 186.5px;
+}
+#headings p{
+    margin: 8px auto;
+}
+.container {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Center items horizontally */
+}
+.container img {
+    height: 39px; /* Set the height of the image */
+    margin-right: 10px; /* Add some spacing between image and text */
+}
+
+.fira1 {
+    text-align: center;
+}
+
+.container {
+    margin: 8px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container img {
+    width: 100px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.container span {
+    margin-top: 8px; /* Adjust vertical spacing between image and text */
+    font-family: var(--font2); /* Apply font styling */
+    font-size: 18px; /* Adjust font size as needed */
+}

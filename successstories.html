@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. K. V. Shivanand Reddy</title>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/successstories.css">
+    
+    <script defer src="https://kit.fontawesome.com/88487eac37.js" crossorigin="anonymous"></script>
+    
+    
+
+</head>
+
+<body>
+
+    <nav class="navigation">
+
+        
+        <div class="nav-left">
+            <a href="#" id="textPadIcon">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </a>
+            <a href="#">
+                <span><i class="fas fa-brain" style="color: #b34c66;"></i></span>
+            </a>
+    
+           
+            <ul id="navLinksContainer">
+                <li id><a href="/">Home</a></li>
+                <li id><a href="about.html">About</a></li>
+                <li id><a href="/awards.html">Honors</a></li>
+                <li id><a href="successstories.html">Success Stories</a></li>
+                <li id><a href="videos.html">Videos</a></li>
+
+                <li id><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li>
+                    <span class="social-icon"><a href="https://www.google.com/search?q=dr+shivanand+reddy+neurosurgeon&rlz=1C1MMCH_en-GBIN1069IN1069&oq=dr+shi&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjjAhiABBiKBTIPCAAQIxgnGOMCGIAEGIoFMhUIARAuGCcYrwEYxwEYgAQYigUYjgUyBggCEEUYOzIGCAMQRRhAMgYIBBBFGDkyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgA&sourceid=chrome&ie=UTF-8">
+                        <i class="fas fa-map-marker-alt" style="color: #D3D3D3;"></i>
+
+                    </a></span>
+                </li>
+
+                <li>
+                    <span class="social-icon"><a href="https://www.linkedin.com/in/dr-k-v-shivanand-reddy-73026b251/" target="_blank">
+                        <i class="fab fa-linkedin" style="color:#211C6A"></i>
+                    </a></span>
+                </li>
+                <li>
+                    <span class="social-icon"><a href="https://www.facebook.com/DrshivanandreddyNeurosurgeon/" target="_blank">
+                        <i class="fa-brands fa-facebook" style="color: #1B1A55;"></i>
+                    </a></span>
+                </li>
+                <li>
+                    <span class="social-icon"><a href="https://www.instagram.com/dr_shivanand_neurosurgeon/" target="_blank">
+                        <i class="fa-brands fa-square-instagram" style="color:#C13584"></i>
+                    </a></span>
+                </li>
+                <li>
+                    <span class="social-icon"><a href="https://www.youtube.com/channel/UCpvx8dIbq-zHcLE8W0DYrTA" target="_blank">
+                        <i class="fa-brands fa-youtube" style="color:#FF0000"></i>
+                    </a></span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        const textPadIcon = document.getElementById('textPadIcon');
+        const navLinksContainer = document.getElementById('navLinksContainer');
+        
+        textPadIcon.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            navLinksContainer.classList.toggle('show');
+        });
+    </script>
+
+
+
+    <div class=" background content max-width-1 m-auto my-2">
+        <div class="content-left">
+            <h2>The Neighborgood: Fostering Connection In Neighborhood</h2>
+
+            <p>Welcome to our thriving Fostering connection within a neighborhood is about cultivating a vibrant
+                tapestry of relationships and interactions that transform a collection of houses and streets into a
+                tight-knit community. It's about creating an environment where residents feel a deep sense of belonging,
+                safety, and mutual support. In such a neighborhood, people don't just share proximity; they share
+                experiences, stories, and a genuine interest in each other's well-being.
+            </p>
+        </div>
+        <div class="content-right">
+            <img src="img/shivanand.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <h3>What We Do</h3>
+
+         
+        
+    
+
+
+        <div class="home-article">
+            <div class="image-container">
+                <a href="https://www.youtube.com/watch?v=ZOa7VLVV7UE" target="_blank"> <!-- Replace "YOUR_VIDEO_ID" with the actual ID of your YouTube video -->
+                    <img src="img/carepatie.jpeg" alt="Description of the image" style="height: 500px; width: 378px;">
+                </a>
+            </div>
+        </div>
+
+
+      
+
+
+        
+     
+
+        
+
+        
+
+
+      
+
+
+     
+
+   
+
+
+     
+
+        <div class="home-article">
+            <div class="image-container">
+                <img src="img/first1.jpeg" id="currentImage" alt="Slide 1" style="height: 500px; width: 378px;">
+                <div class="navigation-icons">
+                    <i class="fa fa-angle-left" id="prevButton" style="float: left;"></i>
+                    <i class="fa fa-angle-right" id="nextButton" style="float: right;" ></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+            const prevButton = document.getElementById('prevButton');
+            const nextButton = document.getElementById('nextButton');
+            const currentImage = document.getElementById('currentImage');
+
+            // Array to hold image paths
+            const images = ['img/first1.jpeg', 'img/first1r.png']; // Corrected file name
+            let currentIndex = 0;
+
+            // Function to display the current image
+            function displayImage() {
+                currentImage.src = images[currentIndex];
+                
+                // Hide prevButton when displaying the first image
+                if (currentIndex === 0) {
+                    prevButton.style.display = 'none';
+                } else {
+                    prevButton.style.display = 'inline-block';
+                }
+            }
+
+            // Event listener for previous button
+            prevButton.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                displayImage();
+            });
+
+            // Event listener for next button
+            nextButton.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % images.length;
+                displayImage();
+            });
+
+            // Display initial image
+            displayImage();
+        });
+        </script>
+
+        <div class="home-article">
+    <div class="image-container">
+        <img src="img/first3.jpeg" id="currentImage1" alt="Slide 1" style="height: 500px; width: 378px;">
+        <div class="navigation-icons">
+            <i class="fa fa-angle-left" id="prevButton1" style="float: left; display: none;"></i>
+            <i class="fa fa-angle-right" id="nextButton1" style="float: right; display: none;"></i>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.getElementById('prevButton1');
+    const nextButton = document.getElementById('nextButton1');
+    const currentImage = document.getElementById('currentImage1');
+
+    const images = ['img/first3.jpeg', 'img/first3r1.png']; // Corrected file name
+    let currentIndex = 0;
+
+    function displayImage() {
+        currentImage.src = images[currentIndex];
+        prevButton.style.display = currentIndex === 0 ? 'none' : 'inline-block';
+        nextButton.style.display = currentIndex === images.length - 1 ? 'none' : 'inline-block';
+    }
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = Math.max(0, currentIndex - 1);
+        displayImage();
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = Math.min(images.length - 1, currentIndex + 1);
+        displayImage();
+    });
+
+    displayImage();
+});
+</script>
+
+
+<div class="home-article">
+    <div class="image-container">
+        <img src="img/first4.jpeg" id="currentImage2" alt="Slide 1" style="height: 500px; width: 378px;">
+        <div class="navigation-icons">
+            <i class="fa fa-angle-left" id="prevButton2" style="float: left; display: none;"></i>
+            <i class="fa fa-angle-right" id="nextButton2" style="float: right; display: none;"></i>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.getElementById('prevButton2');
+    const nextButton = document.getElementById('nextButton2');
+    const currentImage = document.getElementById('currentImage2');
+
+    const images = ['img/first4.jpeg', 'img/first4r.png'];
+    let currentIndex = 0;
+
+    function displayImage() {
+        currentImage.src = images[currentIndex];
+        prevButton.style.display = currentIndex === 0 ? 'none' : 'inline-block';
+        nextButton.style.display = currentIndex === images.length - 1 ? 'none' : 'inline-block';
+    }
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = Math.max(0, currentIndex - 1);
+        displayImage();
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = Math.min(images.length - 1, currentIndex + 1);
+        displayImage();
+    });
+
+    displayImage();
+});
+</script>
+
+
+<div class="home-article">
+    <div class="image-container">
+        <img src="img/first5.jpeg" id="currentImage3" alt="Slide 1" style="height: 500px; width: 378px;">
+        <div class="navigation-icons">
+            <i class="fa fa-angle-left" id="prevButton3" style="float: left; display: none;"></i>
+            <i class="fa fa-angle-right" id="nextButton3" style="float: right; display: none;"></i>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.getElementById('prevButton3');
+    const nextButton = document.getElementById('nextButton3');
+    const currentImage = document.getElementById('currentImage3');
+
+    const images = ['img/first5.jpeg', 'img/first5r.png'];
+    let currentIndex = 0;
+
+    function displayImage() {
+        currentImage.src = images[currentIndex];
+        prevButton.style.display = currentIndex === 0 ? 'none' : 'inline-block';
+        nextButton.style.display = currentIndex === images.length - 1 ? 'none' : 'inline-block';
+    }
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = Math.max(0, currentIndex - 1);
+        displayImage();
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = Math.min(images.length - 1, currentIndex + 1);
+        displayImage();
+    });
+
+    displayImage();
+});
+</script>
+
+
+<div class="home-article">
+    <div class="image-container">
+        <img src="img/first6.jpeg" id="currentImage4" alt="Slide 1" style="height: 500px; width: 378px;">
+        <div class="navigation-icons">
+            <i class="fa fa-angle-left" id="prevButton4" style="float: left; display: none;"></i>
+            <i class="fa fa-angle-right" id="nextButton4" style="float: right; display: none;"></i>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.getElementById('prevButton4');
+    const nextButton = document.getElementById('nextButton4');
+    const currentImage = document.getElementById('currentImage4');
+
+    const images = ['img/first6.jpeg', 'img/first6r.jpeg', 'img/first6r1.png'];
+    let currentIndex = 0;
+
+    function displayImage() {
+        currentImage.src = images[currentIndex];
+        prevButton.style.display = currentIndex === 0 ? 'none' : 'inline-block';
+        nextButton.style.display = currentIndex === images.length - 1 ? 'none' : 'inline-block';
+    }
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = Math.max(0, currentIndex - 1);
+        displayImage();
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = Math.min(images.length - 1, currentIndex + 1);
+        displayImage();
+    });
+
+    displayImage();
+});
+</script>
+
+
+
+
+
+
+<div class="home-article">
+    <div class="image-container">
+        <img src="img/first8.jpeg" id="currentImage6" alt="Slide 1" style="height: 500px; width: 378px;">
+        <div class="navigation-icons">
+            <i class="fa fa-angle-left" id="prevButton6" style="float: left; display: none;"></i>
+            <i class="fa fa-angle-right" id="nextButton6" style="float: right; display: none;"></i>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.getElementById('prevButton6');
+    const nextButton = document.getElementById('nextButton6');
+    const currentImage = document.getElementById('currentImage6');
+
+    const images = ['img/first8.jpeg', 'img/first8r.png'];
+    let currentIndex = 0;
+
+    function displayImage() {
+        currentImage.src = images[currentIndex];
+        prevButton.style.display = currentIndex === 0 ? 'none' : 'inline-block';
+        nextButton.style.display = currentIndex === images.length - 1 ? 'none' : 'inline-block';
+    }
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = Math.max(0, currentIndex - 1);
+        displayImage();
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = Math.min(images.length - 1, currentIndex + 1);
+        displayImage();
+    });
+
+    displayImage();
+});
+</script>
+
+
+            
+        
+
+
+<div class="home-article">
+    <div class="image-container">
+        <img src="img/first9.jpeg" id="currentImage7" alt="Slide 1" style="height: 500px; width: 378px;">
+        <div class="navigation-icons">
+            <i class="fa fa-angle-left" id="prevButton7" style="float: left; display: none;"></i>
+            <i class="fa fa-angle-right" id="nextButton7" style="float: right; display: none;"></i>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.getElementById('prevButton7');
+    const nextButton = document.getElementById('nextButton7');
+    const currentImage = document.getElementById('currentImage7');
+
+    const images = ['img/first9.jpeg', 'img/first91.jpeg', 'img/first92.jpeg', 'img/first93.jpeg', 'img/first9r.png'];
+    let currentIndex = 0;
+
+    function displayImage() {
+        currentImage.src = images[currentIndex];
+        prevButton.style.display = currentIndex === 0 ? 'none' : 'inline-block';
+        nextButton.style.display = currentIndex === images.length - 1 ? 'none' : 'inline-block';
+    }
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = Math.max(0, currentIndex - 1);
+        displayImage();
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = Math.min(images.length - 1, currentIndex + 1);
+        displayImage();
+    });
+
+    displayImage();
+});
+
+</script>
+            
+
+
+
+
+<div class="home-article">
+    <div class="image-container">
+        <img src="img/first10.jpeg" id="currentImage8" alt="Slide 1" style="height: 500px; width: 378px;">
+        <div class="navigation-icons">
+            <i class="fa fa-angle-left" id="prevButton8" style="float: left; display: none;"></i>
+            <i class="fa fa-angle-right" id="nextButton8" style="float: right; display: none;"></i>
+        </div>
+    </div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.getElementById('prevButton8');
+    const nextButton = document.getElementById('nextButton8');
+    const currentImage = document.getElementById('currentImage8');
+
+    const images = ['img/first10.jpeg', 'img/first10r.png'];
+    let currentIndex = 0;
+
+    function displayImage() {
+        currentImage.src = images[currentIndex];
+        prevButton.style.display = currentIndex === 0 ? 'none' : 'inline-block';
+        nextButton.style.display = currentIndex === images.length - 1 ? 'none' : 'inline-block';
+    }
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = Math.max(0, currentIndex - 1);
+        displayImage();
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = Math.min(images.length - 1, currentIndex + 1);
+        displayImage();
+    });
+
+    displayImage();
+});
+</script>
+
+
+
+
+<div class="home-article">
+    <div class="image-container">
+        <img src="img/first11.jpeg" id="currentImage9" alt="Slide 1" style="height: 500px; width: 378px;">
+        <div class="navigation-icons">
+            <i class="fa fa-angle-left" id="prevButton9" style="float: left; display: none;"></i>
+            <i class="fa fa-angle-right" id="nextButton9" style="float: right; display: none;"></i>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const prevButton = document.getElementById('prevButton9');
+        const nextButton = document.getElementById('nextButton9');
+        const currentImage = document.getElementById('currentImage9');
+    
+        const images = ['img/first11.jpeg', 'img/first11r.png'];
+        let currentIndex = 0;
+    
+        function displayImage() {
+            currentImage.src = images[currentIndex];
+            prevButton.style.display = currentIndex === 0 ? 'none' : 'inline-block';
+            nextButton.style.display = currentIndex === images.length - 1 ? 'none' : 'inline-block';
+        }
+    
+        prevButton.addEventListener('click', function() {
+            currentIndex = Math.max(0, currentIndex - 1);
+            displayImage();
+        });
+    
+        nextButton.addEventListener('click', function() {
+            currentIndex = Math.min(images.length - 1, currentIndex + 1);
+            displayImage();
+        });
+    
+        displayImage();
+    });
+    </script>
+    
+       
+
+
+    <div class="home-article">
+        <div class="image-container">
+            <img src="img/first12.jpeg" id="currentImage10" alt="Slide 1" style="height: 500px; width: 378px;">
+            <div class="navigation-icons">
+                <i class="fa fa-angle-left" id="prevButton10" style="float: left; display: none;"></i>
+                <i class="fa fa-angle-right" id="nextButton10" style="float: right; display: none;"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const prevButton = document.getElementById('prevButton10');
+            const nextButton = document.getElementById('nextButton10');
+            const currentImage = document.getElementById('currentImage10');
+        
+            const images = ['img/first12.jpeg', 'img/first12r.png'];
+            let currentIndex = 0;
+        
+            function displayImage() {
+                currentImage.src = images[currentIndex];
+                prevButton.style.display = currentIndex === 0 ? 'none' : 'inline-block';
+                nextButton.style.display = currentIndex === images.length - 1 ? 'none' : 'inline-block';
+            }
+        
+            prevButton.addEventListener('click', function() {
+                currentIndex = Math.max(0, currentIndex - 1);
+                displayImage();
+            });
+        
+            nextButton.addEventListener('click', function() {
+                currentIndex = Math.min(images.length - 1, currentIndex + 1);
+                displayImage();
+            });
+        
+            displayImage();
+        });
+        </script>
+
+
+
+<div class="home-article">
+    <div class="image-container">
+        <img src="img/first13.jpeg" id="currentImage11" alt="Slide 1" style="height: 500px; width: 378px;">
+        <div class="navigation-icons">
+            <i class="fa fa-angle-left" id="prevButton11" style="float: left; display: none;"></i>
+            <i class="fa fa-angle-right" id="nextButton11" style="float: right; display: none;"></i>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const prevButton = document.getElementById('prevButton11');
+        const nextButton = document.getElementById('nextButton11');
+        const currentImage = document.getElementById('currentImage11');
+    
+        const images = ['img/first13.jpeg', 'img/first13r.png'];
+        let currentIndex = 0;
+    
+        function displayImage() {
+            currentImage.src = images[currentIndex];
+            prevButton.style.display = currentIndex === 0 ? 'none' : 'inline-block';
+            nextButton.style.display = currentIndex === images.length - 1 ? 'none' : 'inline-block';
+        }
+    
+        prevButton.addEventListener('click', function() {
+            currentIndex = Math.max(0, currentIndex - 1);
+            displayImage();
+        });
+    
+        nextButton.addEventListener('click', function() {
+            currentIndex = Math.min(images.length - 1, currentIndex + 1);
+            displayImage();
+        });
+    
+        displayImage();
+    });
+    </script>
+    
+            
+        
+
+                
+
+
+
+
+       </div>
+        
+              
+
+</div>
+
+
+    
+
+
+
+
+
+    <div class="footer m-auto">
+        Copyright &copy; Neighborgood.com
+    </div>
+
+</body>
